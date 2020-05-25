@@ -1,0 +1,146 @@
+{% load static %}
+
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel ="stylesheet" type= "text/css" href="{% static "style/style.css" %}"/>
+        <title>Jack</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1"/>
+        <script src="{% static "scripts/jquery-3.4.1.js" %}"></script>
+    </head>    
+    <body>
+        <div class="content">
+            <div id="window">
+                <div id="video-container">
+                    <video autoplay loop muted id ="video">
+                    <source id="mp4" src="{% static "videos\Background.mp4" %}" type="video/mp4">
+                    </video>
+                </div>
+                <div id="name">
+                    <img id="logo" src="{% static "/images/logo_big.png" %}" >
+                </div> 
+            
+            </div>
+            <div class="section-container">
+                <div id="section-2-content">
+                    <div class="wsection" id="#section-2-sub">
+                        <div id="gallery">
+                            <div class="row" id="row-1">
+                                <div class="column" id="column-1">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="html" src="{% static "images/created/browser.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                web design 
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        Proficient in HTML and CSS and intermediate Java Script. Beginner in back end frameworks such as Django
+                                    </div>
+                                </div>
+                                <div class="column" id="column-2">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="python" src="{% static "images/created/Python-w.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                Scientific coding
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        Proficient in  python with a number of self-set projects and University projects such as Robotics and numerical modeling 
+                                    </div>
+                                </div>
+                                <div class="column" id="column-3">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="c" src="{% static "images/created/circuit.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                Low-level Coding
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        Basic knowledge of C and machine code and a knowledge of the building block of modern computing 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="row-2">
+                                <div class="column" id="column2-1">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="nuc" src="{% static "images/created/atom.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                Nuclear Phsycis 
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        My Main interest in Physics at the moment with topics such as fusion energy and nuclear medicine. Been taught in university and through self reading
+                                    </div>
+                                </div>
+                                <div class="column" id="column2-2">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="particle" src="{% static "images/created/particle.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                Particle Physics
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        Interested in how the universe is made up and learning about the processes that created it. Have been taught a number of modules on this topic
+                                    </div>
+                                </div>
+                                <div class="column" id="column2-3">
+                                    <div id="me">
+                                        <div id="img-cont">
+                                            <img id="cog" src="{% static "images/created/cog.png" %}">
+                                        </div>
+                                        <div id="title">
+                                                Engineering
+                                        </div>
+                                    </div>
+                                    <div id="description" data-hover="Learn more">
+                                        I have had three summer placements at a leading civil engineering firm designing infrastructure in the UK.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="wsection" id="#section-2-sub">
+                        <div id='experiance'>
+                            
+                            <div id="avatar">
+                                <img id="jack"  src="{% static "images\jackc.png" %}">
+                            </div>
+                            <div id="section-title">
+                               About Me 
+                            </div>
+                            <div id="about">
+                            I'm a fourth-year physics student at the University of Birmingham with interests in Nuclear Physics and Particle Physics. During my course, I have been taught how to use Python as a tool for scientific laboratories and in my spare time, I like to learn how to implement this into other areas of Coding. I have self-taught myself Html, CSS, and Javascript to a high level and I am currently learning other languages such as C and machine code. I hope to have a better understanding of modern computing to benefit my career as a physicist and my personal goals as a coder.
+                            <br/><br/><br/>
+                            I Have represented my country in Waterpolo at a number of junior and senior tournaments and currently play in the British national league for Welsh wanderers. I have also played rugby in the past for school and club and I am an avid supporter of the Welsh national team. Playing a number of team sports has given me experience in working in high-pressure team environments, I have captained my university water polo team and am a senior member in the Welsh Waterpolo setup.
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="wsection">
+                <div id="section-3-content">
+                    Projects
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
+        <script language="JavaScript" type="text/javascript" src="{% static "scripts/divs.js" %}"></script>
+        <script language="JavaScript" type="text/javascript" src="{% static "scripts/scroll.js" %}"></script>
+    </body>
+    
+</html>
+
+{% endblock %}

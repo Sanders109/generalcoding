@@ -1,0 +1,40 @@
+.section-title {
+	margin-top: 0;
+	margin-bottom: 45px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.filters {
+	list-style: none;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.filters .type {
+	margin-right: 30px;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 15px;
+	color: #8a8a8a
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.filters .type:last-child {
+	margin-right: 0;
+}
+
+.filters .type.active {
+	color: #2196F3;
+	border-bottom: 2px solid #2196F3;
+
+}
+
+.gallery {
+	padding-left: 10%;
+	padding-right: 10%;
+}

@@ -1,9 +1,20 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static %}" 
 {% block page_content %}
-<h1>Projects</h1>
 
-<div class="row">
+<head>
+    
+    <link rel="stylesheet" href="{%static "css/project.css" %}">
+</head>
+
+<h1 class="section-title">Projects</h1>
+
+<ul id="filters" class="filters">
+    <li class="type active">All</li>
+    <li class="type">Web Development</li>
+    <li class="type">Scientific Coding</li>
+</ul>
+<div class="row gallery">
 
 {% for project in projects %}
 
